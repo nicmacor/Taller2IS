@@ -1,0 +1,5 @@
+src/main/java/tallerInspec/DiningExpManager.java:7:	UseUtilityClass:	UseUtilityClass: This utility class has a non-private constructor
+src/main/java/tallerInspec/DiningExpManager.java:34:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/main/java/tallerInspec/DiningExpManager.java:49:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/main/java/tallerInspec/DiningExpManager.java:66:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/main/java/tallerInspec/DiningExpManager.java:88:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
