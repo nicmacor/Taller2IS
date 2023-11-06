@@ -36,7 +36,7 @@ public class DiningExpManager {
         while (continuar1) {
             System.out.print("Enter the name of the meal you want to order (or 'done' to finish): ");
             String item = scanner.nextLine();
-            if (item.equalsIgnoreCase("done")) { //NOPMD
+            if ("done".equalsIgnoreCase(item)) {
                 continuar1=false;
             }
 
@@ -51,7 +51,7 @@ public class DiningExpManager {
                 }
                 scanner.nextLine();
             } 
-            if (!(menu.containsKey(item)) && !(item.equalsIgnoreCase("done"))){ // NOPMD
+            if (!(menu.containsKey(item)) && !("done".equalsIgnoreCase(item))){
                 System.out.println("Invalid meal selection. Please select from the menu.");
             }
     
@@ -68,7 +68,7 @@ public class DiningExpManager {
 
             System.out.print("Confirm order (yes/no): ");
             String confirm = scanner.nextLine();
-            if (confirm.equalsIgnoreCase("yes")) { // NOPMD
+            if ("yes".equalsIgnoreCase(confirm)) {
             	
             	// Apply discounts for more than 10 meals or more than 5
             	if (order.values().stream().mapToInt(Integer::intValue).sum() > 10) {
@@ -90,7 +90,7 @@ public class DiningExpManager {
             } else {
                 System.out.print("You want to cancel or change. (cancel/change): "); // Cancel or change order
                 String modify = scanner.nextLine();
-                if(modify.equals("change")) { // NOPMD
+                if("change".equals(modify)) {
                 	System.out.print("Which meal you want to modify? ");
                 	String change = scanner.nextLine();
                 	if (order.containsKey(change)) { 
